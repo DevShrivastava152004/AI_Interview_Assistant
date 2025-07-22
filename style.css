@@ -1,0 +1,172 @@
+CSS-
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 2rem;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#hero {
+    background: linear-gradient(to bottom, #011831, #90b190);
+    text-align: center;
+    padding: 5rem 1rem;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Demo Section */
+#demo {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.demo-container {
+    margin-top: 2rem;
+}
+
+#login {
+    background-color: #f1f1f1;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.form-container form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.social-btn:nth-child(2) {
+    background-color: #0077b5; /* LinkedIn color */
+}
+
+#features {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
