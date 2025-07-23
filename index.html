@@ -71,6 +71,51 @@
         </div>
     </section>
 
+    <!-- Chatbot Toggle Button -->
+    <button class="chat-toggle" onclick="toggleChat()">💬</button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <h3>AI Interview Coach</h3>
+            <button class="close-chat" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-bubble">
+                    Hello! I'm your AI Interview Coach. I'm here to help you prepare for interviews, practice questions, and give you personalized feedback. How can I assist you today?
+                </div>
+            </div>
+        </div>
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything about interviews..." onkeypress="handleKeyPress(event)">
+            <button class="send-btn" id="sendBtn" onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <!-- API Key Modal -->
+    <div id="apiModal" class="modal">
+        <div class="modal-content">
+            <h3>Enter API Key</h3>
+            <p>To use the AI Interview Coach, please enter your OpenAI API key:</p>
+            <input type="password" id="apiKeyInput" placeholder="sk-...">
+            <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">
+                Don't have an API key? Get one from <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI</a>
+            </p>
+            <div class="modal-buttons">
+                <button class="cancel-btn" onclick="closeApiModal()">Cancel</button>
+                <button class="save-btn" onclick="saveApiKey()">Save</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 AI Interview Assistant. All rights reserved.</p>
