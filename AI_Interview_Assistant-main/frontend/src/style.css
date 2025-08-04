@@ -1,0 +1,39 @@
+/* Tailwind base utilities (required for Tailwind to work) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Smooth font rendering and default styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* Buttons (can override if needed) */
+.btn {
+  @apply px-4 py-2 rounded-md font-semibold text-white transition;
+}
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700;
+}
+.btn-success {
+  @apply bg-green-500 hover:bg-green-600;
+}
+.btn-disabled {
+  @apply bg-gray-400 cursor-not-allowed;
+}
